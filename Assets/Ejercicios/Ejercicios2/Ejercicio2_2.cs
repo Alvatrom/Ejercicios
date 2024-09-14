@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Ejercicio2_2 : MonoBehaviour
 {
-    //int vidas = 0;
-    float exp = 1.4f, resultadoSuma = 0f, vidas = 5f, resultadoResta = 0f;
+    int vidas = 5;
+    float exp = 1.4f ,resultadoResta = 0f,resultadoSuma = 0f;
     char carac ='T';
     // Start is called before the first frame update
     void Start()
