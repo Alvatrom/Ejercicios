@@ -8,6 +8,8 @@ public class Ejercicio4_4 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ConvertidorAMetrosPorSegundo(KmPorHora);
+        Debug.Log("Son en total " + ConvertidorAMetrosPorSegundo(KmPorHora) + "m/s");
         
     }
 
@@ -15,5 +17,11 @@ public class Ejercicio4_4 : MonoBehaviour
     void Update()
     {
         
+    }
+    double ConvertidorAMetrosPorSegundo(float kmPorHora)
+    {
+        double metrosPorSegundo = 0;
+        metrosPorSegundo = kmPorHora / 3.6;
+        return metrosPorSegundo;
     }
 }

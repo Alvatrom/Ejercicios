@@ -224,6 +224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1453505741}
   - component: {fileID: 1453505740}
+  - component: {fileID: 1453505742}
   - component: {fileID: 1453505739}
   m_Layer: 0
   m_Name: Capsule
@@ -311,6 +312,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1453505742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453505738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 698c742111159bd4f97d9873fefa419e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidaJ1: 100
+  vidaJ2: 100
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
