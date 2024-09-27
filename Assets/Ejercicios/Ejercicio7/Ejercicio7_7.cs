@@ -20,17 +20,17 @@ public class Ejercicio7_7 : MonoBehaviour
     {
         if(numero1<numero2)
         {
-            for (int i = numero1; i < numero2; numero1++)//tiene que tener el nº 2 +1?
+            for (int i = numero1; i <= numero2; i++)//tiene que tener el nº 2 +1?
             {
-                Debug.Log(numero1);
+                Debug.Log(i);
 
             }
         }
         else if(numero2< numero1)
         {
-            for (int i = numero2; i < numero1; numero2++)//tiene que tener el nº 1 +1?
+            for (int i = numero2; i <= numero1; i++)//tiene que tener el nº 1 +1?
             {
-                Debug.Log(numero2);
+                Debug.Log(i);
 
             }
         }

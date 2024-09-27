@@ -5,17 +5,18 @@ using UnityEngine.UIElements;
 
 public class Ejercicio7_6 : MonoBehaviour
 {
-    [SerializeField] int numero = 100 /*numeroAdverso = -100*/;
+    [SerializeField] int numero = 100 ,numeroAdverso, numeroOriginal;
     [SerializeField] bool positivo = false;
     // Start is called before the first frame update
     void Start()
     {
         ComprobarNumero(numero);
-        //numeroAdverso = -numero;
+        numeroAdverso = -numero;
+        numeroOriginal = numero;
 
         if (positivo == true)
         {
-            while (-numero < numero)
+            while (numeroAdverso <= numero)
             {
                 Debug.Log(numero);
                 numero--;
@@ -24,9 +25,9 @@ public class Ejercicio7_6 : MonoBehaviour
         else
         { Debug.Log("Escriba un valor positivo"); }
 
-        for (int i = numero; i < -numero; numero--)
+        for (int i = numeroOriginal; i >= -numeroOriginal; i--)
         {
-            Debug.Log(numero);
+            Debug.Log(i);
         }
 
 
