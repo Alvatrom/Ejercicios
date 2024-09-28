@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ejercicio2_1 : MonoBehaviour
 {
-    int edad = 10, codigoPostal = 20000, numeroDeHijos = 10, iva = 21, tallaCamisa = 12, mayorEdad = 12, minutos = 12, dias = 10, contador = 10;
+    /*int edad = 10, codigoPostal = 20000, numeroDeHijos = 10, iva = 21, tallaCamisa = 12, mayorEdad = 12, minutos = 12, dias = 10, contador = 10;
     string nombre = "Pedro", mensaje = "Hola Mundo", matriculaCoche ="9298CBB", tallaCamiseta = "XL";
     char genero = 'H', letra = 'H';
     bool alumnoRepetidor =false, mayorDeEdad = false;
@@ -19,5 +19,5 @@ public class Ejercicio2_1 : MonoBehaviour
     void Update()
     {
         
-    }
+    }*/
 }

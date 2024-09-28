@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,7 +20,7 @@ public class Ejercicio7_10 : MonoBehaviour
                 {
                     Debug.Log("Numero positivo");
                 }
-                else if(i<0)
+                else if (i < 0)
                 {
                     Debug.Log("Numero negativo");
                 }
@@ -28,7 +29,7 @@ public class Ejercicio7_10 : MonoBehaviour
                     Debug.Log("numero igual a 0");
 
                 }
-                if(i % 2 == 0)
+                if (i % 2 == 0)
                 {
                     Debug.Log("Numero par");
                 }
@@ -39,7 +40,7 @@ public class Ejercicio7_10 : MonoBehaviour
                 }
             }
         }
-        else if(numero1 < numero2)
+        else if (numero1 < numero2)
         {
             for (int i = numero1; i <= numero2; i++)
             {
@@ -69,14 +70,14 @@ public class Ejercicio7_10 : MonoBehaviour
                 }
             }
         }
-        
 
-        
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

@@ -28,4 +28,10 @@ public class Personaje : MonoBehaviour
     {
 
     }
+    public float CalcularNivel(int experiencia)
+    {
+        float nivel = experiencia / 1000;
+        Debug.Log(nivel);
+        return nivel;
+    }
 }

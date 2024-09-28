@@ -1,61 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using UnityEngine;
 
 public class Ejercicio7_12 : MonoBehaviour
 {
-    [SerializeField] int numero1 = 10, numero2 = 5;
+    [SerializeField] int numero1 = 5, numero2 = 3;
+    //Math.Min(valor1,valor2) para saber cual es el numero menor entra las dos variables,      Mathf.Max ////// Mathf.Min
     // Start is called before the first frame update
     void Start()
     {
-        
+        int solucion = SumarTodosLosNumeros(numero1, numero2);
+        Debug.Log(solucion);
+
     }
 
-    // Update is called once per frame
-    void Update()
+    int SumarTodosLosNumeros(int numero1, int numero2)
     {
-        
-    }
-    int SumarTodosLosNumeros(int numero1,int numero2)
-    {
-        if (numero1 > numero2)
+        int nmenor = Mathf.Min(numero1, numero2);
+        int nmayor = Mathf.Max(numero1, numero2);
+        int suma = 0;
+
+
+        for (int i = nmenor; i <= nmayor; i++)
         {
-            for (int i = numero2; i <= numero1; i++)
-            {
-                Debug.Log(i);
-
-                
-            }
+            suma += i;
         }
-        else if (numero1 < numero2)
-        {
-            for (int i = numero1; i <= numero2; i++)
-            {
-                Debug.Log(i);
 
-                if (i > 0)
-                {
-                    Debug.Log("Numero positivo");
-                }
-                else if (i < 0)
-                {
-                    Debug.Log("Numero negativo");
-                }
-                else
-                {
-                    Debug.Log("numero igual a 0");
-
-                }
-                if (i % 2 == 0)
-                {
-                    Debug.Log("Numero par");
-                }
-                else
-                {
-                    Debug.Log("Numero impar");
-
-                }
-            }
-        }
+        return suma;
     }
 }
