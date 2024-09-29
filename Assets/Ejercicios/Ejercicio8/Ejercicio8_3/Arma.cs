@@ -9,6 +9,10 @@ public class Arma : MonoBehaviour
     [SerializeField] bool automatica;
     int municionActual;
 
+    //para que pueda ver el valor del daño min y max
+    public float DanhoMinimo { get { return danhoMin; } }
+    public float DanhoMaximo { get { return danhoMax; } }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +24,11 @@ public class Arma : MonoBehaviour
     {
         
     }
+    public void IniciarMunicion()
+    {
+        municionActual = capacidadTotal;
+    }
+
     public int UtilizarArma()
     {
         if (municionActual > 0)
@@ -34,6 +43,7 @@ public class Arma : MonoBehaviour
             return -1;
         }
     }
+
     public int RecargarArma()
     {
         if (municionActual < capacidadTotal)
@@ -48,4 +58,5 @@ public class Arma : MonoBehaviour
             return -1;
         }
     }
+    
 }

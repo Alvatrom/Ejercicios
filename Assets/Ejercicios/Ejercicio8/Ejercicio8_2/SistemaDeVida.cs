@@ -4,18 +4,24 @@ using UnityEngine;
 
 public class SistemaDeVida : MonoBehaviour
 {
-    [SerializeField] float vidaInicial = 200;
-    float vidaActual, cantidad, danho;
+    [SerializeField] float vidaInicial = 200, cantidad =30;
+    float vidaActual, danho;
     // Start is called before the first frame update
     void Start()
     {
-        vidaActual = vidaInicial;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+    // asegurar que la vida inicial es la vida actual
+    public void IniciarVida()
+    {
+        vidaActual = vidaInicial;
+
     }
     public float RecibirCura(float cantidad)
     {

@@ -17,7 +17,7 @@ public class CreadorPersonajes : MonoBehaviour
         link.Vida = 100;
         link.Velocidad = 100;
         link.Danno = 100;
-        link.Movimiento(2, 5, 1);
+        //link.Movimiento(2, 5, 1);
 
         mario.Vida = 100;
         mario.Velocidad = 100;
