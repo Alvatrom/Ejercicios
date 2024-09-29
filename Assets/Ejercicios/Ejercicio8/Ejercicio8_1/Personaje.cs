@@ -6,8 +6,8 @@ public class Personaje : MonoBehaviour
 {
     //COMO se define mi personaje
     //Propiedades o atributos
-    float vida = 200f, danno = 100f, velocidad = 38f;
-    string nombre;
+    private float vida = 200f, danno = 100f, velocidad = 38f;
+    private string nombre;
 
     public float Danno { get => danno; set => danno = value; }
     public float Velocidad { get => velocidad; set => velocidad = value; }
